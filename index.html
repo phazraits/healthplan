@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>2023 ACA Health Plans</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&amp;display=swap" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/css/variables.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+
+
+
+</head>
+<body>
+<section id="hero-static" class="hero-static d-flex align-items-center">
+    <div class="container d-flex flex-column justify-content-center align-items-center text-center position-relative content">
+        <p>
+            <span class="red">Warning: </span>Enrollment closes on
+            <span id="currentDate"></span> at midnight.
+        </p>
+        <h2 class="content-text">New Program Unlocks $6,400 in Tax Credits to Cover Health Costs and Save for Everyday Expenses</h2>
+        <p style="font-size: 16px;">
+            <img src="assets/img/animation_green_dot.gif" alt="avatar 1" style="width: 45px; height: 100%;">
+            Emily is Online.
+        </p>
+    </div>
+</section>
+
+    <main id="main">
+        <section id="blog" class="blog ">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-8 col-lg-6 col-xl-4">
+                    <div class="card" id="chat1" style="border: none;">
+                        <div class="card-body">
+                            <div id="agentBlock1" class="d-flex justify-content-start mb-4" style=" align-items: flex-end;">
+                                <input id="hdnApprovalStatus" type="hidden">
+                                <div style="flex-shrink: 0;">
+                                    <img src="assets/img/agentpic.jpg" alt="avatar 1" style="width: 45px; height: 100%;border-radius: 22px;">
+                                </div>
+                                <div class="messages">
+                                    <div id="initTyping" class="p-2 rounded-lg shadow-xs mt-2 inline-block" style="width: fit-content; border-radius: 8px; background-color: #02b40747;">
+                                        <div class="typing-animation">
+                                            <div class="typing-dot"></div>
+                                            <div class="typing-dot"></div>
+                                            <div class="typing-dot"></div>
+                                        </div>
+                                    </div>
+                                    <div id="msg1" class="p-2 ms-2 mb-2 hidden" style="width: fit-content; border-radius: 8px; background-color: #02b40747;">
+                                        <p class="small mb-0">Hi 👋</p>
+                                    </div>
+                                    <div id="msg2" class="p-2 ms-2 mb-2 hidden" style="width: fit-content; border-radius: 8px; background-color: #02b40747;">
+                                        <p class="small mb-0">I'm Emily from Health Benefits.</p>
+                                    </div>
+                                    <div id="msg3" class="p-2 ms-2 mb-2 hidden" style="width: fit-content; border-radius: 8px; background-color: #02b40747;">
+                                        <p class="small mb-0">Want to find out if you qualify for up a $6400 subsidy as a Health Credit? Tap Yes! 😃</p>
+                                    </div>
+                                    <div id="msg4" class="p-2 ms-2 mb-2 hidden" style="width: fit-content; border-radius: 8px; background-color: #02b40747;">
+                                        <p class="small mb-0">
+                                            <button type="button" class="btn-get-qualified chat-button startquiz" data-form-step="1" data-form-value="Yes">Yes</button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="userBlock1" class="d-flex flex-row justify-content-end mb-4 hidden">
+                                <div id="msg5" class="p-2 me-2 border" style="min-width: 50px;border-radius: 8px;background-color: #fbfbfb;text-align: center;">
+                                    <p class="small mb-0">Yes</p>
+                                </div>
+                                <img src="assets/img/userpic.png" alt="avatar 1" style="width: 45px; height: 100%;">
+                            </div>
+
+                            <div id="agentBlock2" class="d-flex justify-content-start mb-4 hidden" style=" align-items: flex-end;">
+                                <div style="flex-shrink: 0;">
+                                    <img src="assets/img/agentpic.jpg" alt="avatar 1" style="width: 45px; height: 100%;border-radius: 22px;">
+                                </div>
+                                <div class="agent-chat">
+                                    <div id="msg6" class="p-2 ms-2 mb-2 hidden" style="width: fit-content; border-radius: 8px; background-color: #02b40747;">
+                                        <p class="small mb-0">Okay, let me ask you two quick questions.</p>
+                                    </div>
+                                    <div id="msg7" class="p-2 ms-2 mb-2 hidden" style="width: fit-content; border-radius: 8px; background-color: #02b40747;">
+                                        <p class="small mb-0">Do you make less than $60,000/year? Tap Yes or No.</p>
+                                    </div>
+                                    <div id="msg8" class="p-2 ms-2 mb-2 hidden" style="width: fit-content; border-radius: 8px; background-color: #02b40747;">
+                                        <p class="small mb-0">
+                                            <button type="button" class="btn-get-qualified chat-button" data-form-step="2" data-form-value="Yes">Yes</button>
+                                            <button type="button" class="btn-get-qualified chat-button" data-form-step="2" data-form-value="No">No</button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="userBlock2" class="d-flex flex-row justify-content-end mb-4 hidden">
+                                <div id="msg9" class="p-2 me-2 border" style="min-width: 50px;border-radius: 8px;background-color: #fbfbfb;text-align: center;">
+                                    <p id="msg9yes" class="small mb-0 hidden">Yes</p>
+                                    <p id="msg9no" class="small mb-0 hidden">No</p>
+                                </div>
+                                <img src="assets/img/userpic.png" alt="avatar 1" style="width: 45px; height: 100%;">
+                            </div>
+                            <div id="agentBlock3" class="d-flex justify-content-start mb-4 hidden" style=" align-items: flex-end;">
+                                <div style="flex-shrink: 0;">
+                                    <img src="assets/img/agentpic.jpg" alt="avatar 1" style="width: 45px; height: 100%;border-radius: 22px;">
+                                </div>
+                                <div class="agent-chat">
+                                    <div id="msg10" class="p-2 ms-2 mb-2 hidden" style="width: fit-content; border-radius: 8px; background-color: #02b40747;">
+                                        <p class="small mb-0">Are you on medicaid or medicare?</p>
+                                    </div>
+                                    <div id="msg11" class="p-2 ms-2 mb-2 hidden" style="width: fit-content; border-radius: 8px; background-color: #02b40747;">
+                                        <p class="small mb-1">
+                                            <button type="button" class="btn-get-qualified chat-button finishquiz" data-form-step="3" data-form-value="No">No</button>
+                                        </p>
+                                        <p class="small mb-1">
+                                            <button type="button" class="btn-get-qualified chat-button finishquiz" data-form-step="3" data-form-value="Medicaid">Medicaid</button>
+                                        </p>
+                                        <p class="small mb-1">
+                                            <button type="button" class="btn-get-qualified chat-button finishquiz" data-form-step="3" data-form-value="Medicare">Medicare</button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="userBlock3" class="d-flex flex-row justify-content-end mb-4 hidden">
+                                <div id="msg12" class="p-2 me-2 border" style="min-width: 50px;border-radius: 8px;background-color: #fbfbfb;text-align: center;">
+                                    <p id="msg12no" class="small mb-0 hidden">No</p>
+                                    <p id="msg12medicaid" class="small mb-0 hidden">Medicaid</p>
+                                    <p id="msg12medicare" class="small mb-0 hidden">Medicare</p>
+                                </div>
+                                <img src="assets/img/userpic.png" alt="avatar 1" style="width: 45px; height: 100%;">
+                            </div>
+                            <div id="agentBlock4" class="d-flex justify-content-start mb-4 hidden" style=" align-items: flex-end;">
+                                <div style="flex-shrink: 0;">
+                                    <img src="assets/img/agentpic.jpg" alt="avatar 1" style="width: 45px; height: 100%;border-radius: 22px;">
+                                </div>
+                                <div class="agent-chat">
+                                    <div id="msg13" class="p-2 ms-2 mb-2 hidden" style="width: fit-content; border-radius: 8px; background-color: #02b40747;">
+                                        <p class="small mb-0">🎉 Congratulations! 🎁!</p>
+                                    </div>
+                                    <div id="msg14" class="p-2 ms-2 mb-2 hidden" style="width: fit-content; border-radius: 8px; background-color: #02b40747;">
+                                        <p class="small mb-0">You're pre-qualified for a $6400 subsidy as a Health Credit.</p>
+                                    </div>
+                                    <div id="msg15" class="p-2 ms-2 mb-2 hidden" style="width: fit-content; border-radius: 8px; background-color: #02b40747;">
+                                        <!--<p class="small mb-0">You can use it for your grocery, rent, medical expenses, and so on. </p>-->
+                                        <p class="small mb-0">You can use the money you'll save for your grocery, rent, medical expenses, and so on.</p>
+                                    </div>
+                                    <div id="msg16" class="p-2 ms-2 mb-2 hidden" style="width: fit-content; border-radius: 8px; background-color: #02b40747;">
+                                        <p class="small mb-0">Tap the number button below to call now to get your $6400 Health Credit, It only takes 2 minutes.</p>
+                                    </div>
+                                    <div id="msg17" class="p-2 ms-2 mb-2 hidden" style="width: fit-content; border-radius: 8px; background-color: #02b40747;">
+                                        <p class="small mb-0">
+                                            <a href="tel:+18559391446" class="btn-get-qualified phonecallclick">
+                                                <i class="bi bi-telephone flex-shrink-0"></i> (855) 939-1446
+                                            </a>
+                                        </p>
+                                    </div>
+                                    <div id="msg18" class="p-2 ms-2 mb-2 hidden" style="width: fit-content;border-radius: 8px; background-color: #02b40747;">
+                                        <p class="small mb-0">Sorry, but the questions you answered have helped us determine that we are not able to help you at this time.</p>
+                                    </div>
+                                    <div id="msg19" class="p-2 ms-2 mb-2 hidden" style="width: fit-content; border-radius: 8px; background-color: #02b40747;">
+                                        <p class="small mb-0">Have a nice day! 😃</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer" class="footer">
+        <div class="footer-content">
+            <div class="container">
+
+            </div>
+        </div>
+        <div class="footer-legal text-center">
+            <div class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+                <div class="d-flex flex-column align-items-center align-items-lg-start">
+                    <div class="copyright">
+                        &copy; 2023 All Rights Reserved
+                    </div>
+                </div>
+                <div class="d-flex flex-row align-items-center align-items-lg-start">
+                    <a href="">Privacy | </a>&nbsp;
+                    <a href="">Terms | </a>&nbsp;
+                    <a href="">CCPA | </a>&nbsp;
+                    <a href="">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" crossorigin="anonymous"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.min.js"></script>
+
+</body>
+
+</html>
